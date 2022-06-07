@@ -5,7 +5,7 @@ from pycaw.pycaw import AudioUtilities
 import win32process
 
 def get_config():
-    process_name_list = ['YuanShen.exe']
+    process_name_list = ['YuanShen.exe', 'GenshinImpact.exe']
     file_name = 'BackgroundMuter.txt'
     encoding = 'utf-8'
     try:
