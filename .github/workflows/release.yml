@@ -26,9 +26,12 @@ jobs:
       - name: Package to exe
         run: pyinstaller .\BackgroundMuter.py
 
+      - name: Zip files
+        run: Compress-Archive dist\* BackgroundMuter.zip
+
       - name: Release files
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: dist/*
+          files: BackgroundMuter.zip
 
