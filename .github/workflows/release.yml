@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Package to exe
-        run: pyinstaller -F .\BackgroundMuter.py
+        run: pyinstaller .\BackgroundMuter.py
 
       - name: Release files
         uses: softprops/action-gh-release@v1
